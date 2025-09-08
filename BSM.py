@@ -20,12 +20,11 @@ def bsm_delta(s, k, r, t, sigma):
 
 def bsm_gamma(s, k, r, t, sigma):
     d1 = (math.log(s / k) + (r + 0.5 * sigma ** 2) * t) / sigma * math.sqrt(t)
-    first = s * norm.cdf(d1)
-    second = s * norm.pdf(first) / (sigma * math.sqrt(t))
-    return first + second
+    second = s * norm.pdf(d1) / (sigma * math.sqrt(t))
+    return d1 + second
 
-print(bsm_call_value(100, 100, 0.05, 1.0, 0.20))
-print(bsm_delta(100, 100, 0.05, 1.0, 0.20))
-print(bsm_gamma(100, 100, 0.05, 1.0, 0.20))
+#print(bsm_call_value(100, 100, 0.05, 1.0, 0.20))
+#print(bsm_delta(100, 100, 0.05, 1.0, 0.20))
+#print(bsm_gamma(100, 100, 0.05, 1.0, 0.20))
 
-#Need to fix gamma, wrong formula
+#formulas are all working now

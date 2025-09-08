@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4448d69-ebb6-4cdd-9852-3e4e64e93fca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/BSM-Taylor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BSM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Taylor.py" afterDir="false" />
+    <list default="true" id="e4448d69-ebb6-4cdd-9852-3e4e64e93fca" name="Changes" comment="9/2/2025 11:03">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BSM.py" beforeDir="false" afterPath="$PROJECT_DIR$/BSM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taylor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taylor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +24,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Stone8832&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Stone8832/BSM-Taylor.git&quot;,
+    &quot;accountId&quot;: &quot;ec84e0f4-f60a-49f5-b0a4-cb524f699630&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="32Axyq7CTNgztARykgFksHOzAwE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -42,7 +50,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.BSM.executor": "Run",
+    "Python.Taylor.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master"
   }
 }]]></component>
@@ -62,6 +72,30 @@
       <option name="presentableId" value="Default" />
       <updated>1756877437023</updated>
     </task>
+    <task id="LOCAL-00001" summary="9/2/2025 11:03">
+      <option name="closed" value="true" />
+      <created>1756879434000</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756879434000</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="9/2/2025 11:03" />
+    <option name="LAST_COMMIT_MESSAGE" value="9/2/2025 11:03" />
   </component>
 </project>
