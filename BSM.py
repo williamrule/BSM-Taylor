@@ -23,6 +23,11 @@ def bsm_gamma(s, k, r, t, sigma):
     second = s * norm.pdf(d1) / (sigma * math.sqrt(t))
     return d1 + second
 
+
+
+
+
+
 #print(bsm_call_value(100, 100, 0.05, 1.0, 0.20))
 #print(bsm_delta(100, 100, 0.05, 1.0, 0.20))
 #print(bsm_gamma(100, 100, 0.05, 1.0, 0.20))
