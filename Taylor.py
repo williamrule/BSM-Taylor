@@ -72,9 +72,16 @@ def errors_at_x(s,r,t,sigma,x,c0,c1,c2,c3):
               "delta_error" : delta_error, "gamma_error" : gamma_error,
              "pass_all" : (price_pass and delta_pass and gamma_pass)}
 
-#class to sweep multiple x values (different strikes)
-def sweep_errors_and_bound():
-    return
+#class to sweep multiple x values (different strikes) at makes a list
+def sweep_strikes(s,r,t,sigma, x_min, x_max, step):
+    c0, c1, c2, c3, c4 = atm_coeff(s,r,t,sigma)
+    strikes = list(np.arange(x_min, x_max + step, step))
+    taylor_price_list = []
+    for x in strikes:
+        taylor_price_list.append(taylor_price_x(x, c0, c1, c2, c3))
+
+    return taylor_price_list
+
 
 coeff = atm_coeff(s, r, t, sigma)
 c0 = coeff[0]
@@ -87,8 +94,10 @@ k = strike(s, x)
 
 call_value = taylor_price_x(x, c0, c1, c2, c3)
 call_value_bsm = bsm_call_value(s, k, r, t, sigma)
-print("x = " + str(x))
-print("Taylor value: " + str(call_value))
-print("Bsm value: " + str(call_value_bsm))
-print(c4)
+#print("x = " + str(x))
+#print("Taylor value: " + str(call_value))
+#print("Bsm value: " + str(call_value_bsm))
+#print(c4)
 
+print(sweep_strikes(s,r,t,sigma, -0.1,0.1,0.05))
+print(bsm_call_value(s,105.127,r,t,sigma))
