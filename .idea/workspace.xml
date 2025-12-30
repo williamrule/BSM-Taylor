@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4448d69-ebb6-4cdd-9852-3e4e64e93fca" name="Changes" comment="11/5/25 strike price sweep class">
+    <list default="true" id="e4448d69-ebb6-4cdd-9852-3e4e64e93fca" name="Changes" comment="11/5/25 2">
+      <change afterPath="$PROJECT_DIR$/speed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sweep.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BSM.py" beforeDir="false" afterPath="$PROJECT_DIR$/BSM.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Taylor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taylor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/error.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.BSM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Taylor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.error tests.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.BSM.executor": "Run",
+    "Python.Taylor.executor": "Run",
+    "Python.error tests.executor": "Run",
+    "Python.sweep.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
-  <component name="RunManager" selected="Python.Taylor">
+}]]></component>
+  <component name="RunManager">
     <configuration name="BSM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BSM-Taylor" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -82,6 +88,9 @@
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -151,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762379841696</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="11/5/25 2">
+      <option name="closed" value="true" />
+      <created>1762407571867</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762407571867</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +186,7 @@
     <MESSAGE value="9/2/2025 11:03" />
     <MESSAGE value="9/22/2025 8:50" />
     <MESSAGE value="11/5/25 strike price sweep class" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/5/25 strike price sweep class" />
+    <MESSAGE value="11/5/25 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="11/5/25 2" />
   </component>
 </project>
