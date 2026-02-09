@@ -1,0 +1,22 @@
+RESULTS SUMMARY
+Parameters:
+  S: 100.0
+  r: 0.05
+  T: 1.0
+  sigma: 0.2
+
+Thresholds:
+  price_abs: 0.01
+  delta_abs: 0.01
+  gamma_rel: 0.05
+
+Validated band (baseline):
+  x_star: 0.009
+  K_min: 99.10403787728836
+  K_max: 100.90406217738679
+  pct_minus: -0.008959621227116354
+  pct_plus: 0.009040621773867885
+
+Speed benchmark:
+  N=100,000: BS=0.0288s, T3=0.0027s, speedup=10.49x
+  N=1,000,000: BS=0.2513s, T3=0.0706s, speedup=3.56x
