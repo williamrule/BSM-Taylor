@@ -1,53 +1,54 @@
 # BSM-Taylor
-Taylor-series approximation of the **Black–Scholes–Merton (BSM)** European option price, plus experiments that measure **accuracy (price/Δ/Γ)** and **speed** vs. the exact closed-form BSM pricer.
+Taylor-series approximation of the **Black–Scholes–Merton (BSM)** European option price, with experiments that measure **pricing/Greeks error (Price, Δ, Γ)** and **runtime speedup** versus the exact closed-form BSM pricer.
 
-**What this repo demonstrates:** approximation behavior is *local*—it can be very accurate near the expansion point (often near-ATM), and error grows as you move away in moneyness / volatility / maturity.
+This repo is built around one question: **how local is a Taylor approximation of BSM, and how quickly does it degrade as you move away from the expansion point?**
 
 ---
 
-## What’s included
+## Contents
 
-### Core modules
-- `BSM.py` — baseline BSM pricing / Greeks used as the “ground truth”
+### Core implementation
+- `BSM.py` — baseline BSM price / Greeks used as the reference (“ground truth”)
 - `Taylor.py` — Taylor approximation implementation around an expansion point
 
-### Experiments / utilities
-- `sweep.py` — parameter sweep(s) to compare Taylor vs exact BSM
-- `error.py` — error computation (price / delta / gamma)
-- `speed.py` — timing comparisons (exact vs Taylor)
-- `plot.py` — plotting utilities for the experiments
-- `make_outputs.py` — convenience script to regenerate the artifacts in `outputs/` (CSV + plots)
+### Experiments
+- `sweep.py` — runs parameter sweeps (spot/moneyness and other settings)
+- `error.py` — computes error metrics (price / delta / gamma)
+- `speed.py` — measures timing and speedup (exact BSM vs Taylor)
+- `plot.py` — plotting utilities
+- `make_outputs.py` — convenience script to regenerate artifacts in `outputs/`
 
 ---
 
-## Outputs (already in this repo)
+## Outputs (plots + data)
 
-The `outputs/` directory contains:
-- `baseline_sweep.csv` — the sweep results used to produce the plots
-- `error_price.png` — pricing error plot
-- `error_delta.png` — delta error plot
-- `error_gamma_rel.png` — relative gamma error plot
-- `speed_times.png` — timing comparison plot
-- `speed_speedup.png` — speedup plot
+This project keeps precomputed artifacts in `outputs/`:
 
-> Note: `outputs/summary.txt` is a run log / summary and is meant to be ignored (not tracked).
+- `outputs/baseline_sweep.csv`
+- `outputs/error_price.png`
+- `outputs/error_delta.png`
+- `outputs/error_gamma_rel.png`
+- `outputs/speed_times.png`
+- `outputs/speed_speedup.png`
+
+> `outputs/summary.txt` is a run log and should **not** be tracked.
 
 ### Preview
 
 #### Price error
-![Price error](outputs/error_price.png)
+![Price error](./outputs/error_price.png)
 
 #### Delta error
-![Delta error](outputs/error_delta.png)
+![Delta error](./outputs/error_delta.png)
 
 #### Gamma error (relative)
-![Gamma error (relative)](outputs/error_gamma_rel.png)
+![Gamma error (relative)](./outputs/error_gamma_rel.png)
 
 #### Timing
-![Timing](outputs/speed_times.png)
+![Timing](./outputs/speed_times.png)
 
 #### Speedup
-![Speedup](outputs/speed_speedup.png)
+![Speedup](./outputs/speed_speedup.png)
 
 ---
 
@@ -60,23 +61,24 @@ C(S,K,r,\sigma,T) = S\,N(d_1) - K e^{-rT} N(d_2)
 $$
 
 $$
-d_1 = \frac{\ln(S/K) + (r + \tfrac{1}{2}\sigma^2)T}{\sigma\sqrt{T}},\quad
+d_1 = \frac{\ln(S/K) + \left(r + \tfrac{1}{2}\sigma^2\right)T}{\sigma\sqrt{T}},
+\quad
 d_2 = d_1 - \sigma\sqrt{T}
 $$
 
-Taylor approximation idea (illustrative form, expanding in spot around \(S_0\)):
+Taylor approximation idea (illustrative; order \(N\) around an expansion point \(S_0\)):
 
 $$
 C(S) \approx \sum_{n=0}^{N}\frac{C^{(n)}(S_0)}{n!}(S-S_0)^n
 $$
 
-This repo focuses on **empirical error behavior** (how approximation quality changes across parameter regimes) and **runtime tradeoffs** (speed vs. accuracy).
+The focus here is empirical: **map the error** as parameters move away from the expansion point and compare **runtime tradeoffs**.
 
 ---
 
 ## Setup
 
-### Dependencies
-This project uses standard scientific Python tooling. Install:
+Install the usual scientific Python stack:
+
 ```bash
 pip install numpy scipy matplotlib
