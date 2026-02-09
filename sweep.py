@@ -21,6 +21,7 @@ def sweep_strikes(s,r,t,sigma, x_min, x_max, step):
 
 #Returns the band that satisfies the desired error and a dataframe of the passed strikes
 #Note to self: Need to make band symmetric and continguity
+
 def band_extraction(taylor_strike_list):
     df = pd.DataFrame(taylor_strike_list)
     all_pass_list = df[df["all_pass"]]

@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4448d69-ebb6-4cdd-9852-3e4e64e93fca" name="Changes" comment="11/5/25 2">
-      <change afterPath="$PROJECT_DIR$/speed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sweep.py" afterDir="false" />
+    <list default="true" id="e4448d69-ebb6-4cdd-9852-3e4e64e93fca" name="Changes" comment="12/29">
+      <change afterPath="$PROJECT_DIR$/make_outputs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taylor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Taylor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/error.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed.py" beforeDir="false" afterPath="$PROJECT_DIR$/speed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sweep.py" beforeDir="false" afterPath="$PROJECT_DIR$/sweep.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +54,8 @@
     "Python.BSM.executor": "Run",
     "Python.Taylor.executor": "Run",
     "Python.error tests.executor": "Run",
+    "Python.make_outputs.executor": "Run",
+    "Python.speed.executor": "Run",
     "Python.sweep.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -107,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Taylor" />
         <item itemvalue="Python.BSM" />
+        <item itemvalue="Python.Taylor" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762407571867</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="12/29">
+      <option name="closed" value="true" />
+      <created>1767071462628</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1767071462630</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +197,7 @@
     <MESSAGE value="9/22/2025 8:50" />
     <MESSAGE value="11/5/25 strike price sweep class" />
     <MESSAGE value="11/5/25 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/5/25 2" />
+    <MESSAGE value="12/29" />
+    <option name="LAST_COMMIT_MESSAGE" value="12/29" />
   </component>
 </project>
