@@ -106,22 +106,20 @@ What to look for:
 
 ---
 
-## Recommended outputs (for a portfolio-ready repo)
-Add a `figures/` folder and include 2–4 of your best plots here. For example:
-- `figures/error_vs_spot.png`
-- `figures/error_heatmap.png`
-- `figures/speed_comparison.png`
+### Pricing error
+![Price error](outputs/error_price.png)
 
-Then embed them:
+### Delta error
+![Delta error](outputs/error_delta.png)
 
-### Error vs. Spot
-![Error vs Spot](figures/error_vs_spot.png)
+### Gamma error (relative)
+![Gamma error (relative)](outputs/error_gamma_rel.png)
 
-### Error Heatmap (Moneyness × Volatility)
-![Error Heatmap](figures/error_heatmap.png)
+### Timing
+![Timing](outputs/speed_times.png)
 
-### Speed Comparison
-![Speed Comparison](figures/speed_comparison.png)
+### Speedup
+![Speedup](outputs/speed_speedup.png)
 
 > If your scripts don’t currently save figures automatically: add a `plt.savefig("figures/<name>.png", dpi=200, bbox_inches="tight")`.
 
